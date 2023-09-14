@@ -15,7 +15,7 @@ const start = async () => {
     })
     app.setGlobalPrefix('api')
     const config = new DocumentBuilder()
-        .setTitle('BOOKS')
+        .setTitle('amoCRM')
         .setDescription('Документация REST API')
         .setVersion('1.0.0')
         .build()

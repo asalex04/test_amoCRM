@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger'
 import {IsEmail, IsNotEmpty, IsPhoneNumber} from 'class-validator'
-import { ERROR_MESSAGES } from '../../../constants'
+import { ERROR_MESSAGES } from '../../constants'
 
 export class CreateContactDto {
   @ApiProperty()
