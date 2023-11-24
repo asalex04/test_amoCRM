@@ -6,7 +6,7 @@ export const contact = (first_name, last_name, phone, email, id?) => {
             "last_name": `${last_name}`,
             "custom_fields_values": [
                 {
-                    "field_id": 2189311,
+                    "field_id": 1536179,
                     "values": [
                         {
                             "value": `${phone}`
@@ -14,7 +14,7 @@ export const contact = (first_name, last_name, phone, email, id?) => {
                     ]
                 },
                 {
-                    "field_id": 2189313,
+                    "field_id": 1536181,
                     "values": [
                         {
                             "value": `${email}`

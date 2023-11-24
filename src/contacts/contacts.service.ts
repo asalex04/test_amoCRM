@@ -11,12 +11,16 @@ interface Params {
     query?: string
     id?: string
 }
+interface IUser {
+    _page: number
+    _links: {}
+}
 
 @Injectable()
 export class ContactsService {
     async createContact(dto: CreateContactDto) {
         const { first_name, last_name, phone, email } = dto
-        let user: null
+        let user = {} as IUser
         const contacts = await Promise.all([
             this.getOneContact(phone),
             this.getOneContact(email)
